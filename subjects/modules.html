@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="../images/icon/favicon.png">
+    <title>Learning Materials on FieryFox</title>
+    <link rel="stylesheet" href="subjects.css">
+    <link rel="stylesheet" href="modulesStyle.css">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <header>
+        <div class="nav" id="nav">
+            <div id="FieryFox-logo">
+                <a href="../index.html"><img src="../images/icon/logo.png" alt="FieryFox Logo" style="width: 150px;"></a>
+            </div>
+            <div class="switch-tab" id="switch-tab" onclick="switchTAB()">
+                <img src="../images/icon/menu.png" alt="Menu Icon">
+            </div>
+            <ul id="list-switch">
+                <li><a href="gate.html"><img src="../images/courses/paper.png" class="icon">GATE</a></li>
+                <li><a href="computer_courses.html"><img src="../images/courses/computer.png" class="icon">Computer Courses</a></li>
+                <li><a href="#"><img src="../images/courses/book.png" class="icon">Modules</a></li>
+                <li><a href="quiz.html"><img src="../images/courses/projects.png" class="icon">Quiz</a></li>
+            </ul>
+            <div class="search" id="search-switch">
+                <input type="search" placeholder="Search" class="srch" aria-label="Search">
+                <button id="srchbtn"><img src="../images/icon/search.png" alt="Search Icon"></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MODULES SECTION  -->
+    <div class="panel" id="panel" style="display: block;">
+        <div class="left-side" id="left">
+            <ul>
+                <li class="dropdown">
+                    <span class="dropdown-header" onclick="toggleDropdown(event, 'os')">Operating System</span>
+                    <ul class="dropdown-menu" id="os">
+                        <li onclick="displayModule('https://drive.google.com/file/d/1V-v52j-PEU6ji4guM3SPhg7mO3tTVIw3/preview')">Module 1</li>
+                        <li onclick="displayModule('https://drive.google.com/file/d/1axyqZmKbkG6I5K_vjvzqsw791q517c-1/preview')">Module 2</li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <span class="dropdown-header" onclick="toggleDropdown(event, 'programming')">Programming Language</span>
+                    <ul class="dropdown-menu" id="programming">
+                        <li onclick="displayModule('https://drive.google.com/file/d/1VRhgwQnS-IUMgSTSruPC2Ijqt5WprmZ0/preview')">Module 1</li>
+                        <li onclick="displayModule('https://drive.google.com/file/d/1IRSQHXinb86Gix-_hKwroenFL3SWMu7P/preview')">Module 2</li>
+                        <li onclick="displayModule('https://drive.google.com/file/d/1nUoKjdqjni_RTEd9Iuw9n6_vl2Ku_XVF/preview')">Module 3</li>
+                        <li onclick="displayModule('https://drive.google.com/file/d/1zXknERXKRCwBznnNAfiOadN7LZrqvXm4/preview')">Module 4</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="right-side" id="right">
+            <div id="module-container">
+                <iframe id="moduleIframe" class="module-frame" src="" title="Modules" f width="640" height="480" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="left-col">
+                <img src="../images/icon/logo.png" alt="FieryFox Logo" style="width: 200px;">
+                <p class="rights-text">Copyright © 2021 Created By Francine Martizano All Rights Reserved.</p>
+                <p><img src="../images/icon/location.png" alt="Location Icon"> Laguna State Polytechnic University-Siniloan<br>Siniloan, Laguna</p>
+                <p><img src="../images/icon/phone.png" alt="Phone Icon"> +63-992-324-1603<br><img src="../images/icon/mail.png" alt="Mail Icon"> fieryfox.help@gmail.com</p>
+            </div>
+            <div class="right-col">
+                <h2>Our Newsletter</h2>
+                <p>Enter your email to get our news and updates.</p>
+                <form class="newsletter-form">
+                    <input class="txtb" type="email" placeholder="Enter Your Email" required>
+                    <input class="btn" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="../script.js"></script>
+</body>
+</html>
